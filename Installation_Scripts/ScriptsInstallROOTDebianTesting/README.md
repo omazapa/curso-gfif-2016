@@ -16,4 +16,6 @@ The argument is optional, if no N is given the script sets `N=2`. This step take
 * The scripts are configured to work with Python 3. You can comment and uncomment some lines in the script `1-get_root_prerequisites.bash` to use the old Python 2.7 standard.   
 * The scripts update the repositories and install the prerequistes to install ROOT. Nothing additional should be made
 since the idea is to automate the whole process. Feel free to edit the scripts according to your needs.   
-* The scripts might not work since we are pulling the mater branch of the ROOT repository.   
+* A reason for failure using the scripts (They have been successfully used in two different machines so far) is that we are working with the `master` branch of the ROOT repository
+(a.k.a the development branch) so any bug associated with the development process is pulled from the repository. Don't panic, just wait few hours and do a
+`git pull ` inside your local mirror `root` to fetch updated versions of the source files.  
