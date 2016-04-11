@@ -22,7 +22,7 @@ lib/libpi.so:lib/libreriaPis.o
 
 pi:$(MAIN) lib/libpi.so
 	$(CC) $(CFLAGS) $< -o $@.o
-	$(CC) $(LDFLAGS) $@.o -o $@
+	$(CC) $@.o $(LDFLAGS) -o $@
 
 clean:
 	rm -rf lib/* pi pi.o
